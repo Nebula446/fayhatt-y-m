@@ -5,7 +5,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Download ngrok
-      run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64-3.2.0.zip -OutFile ngrok.zip
+      run: Invoke-WebRequest https://github.com/ngrok/ngrok/releases/download/v3.2.0/ngrok-stable-windows-amd64-3.2.0.zip -OutFile ngrok.zip
     - name: Extract ngrok
       run: Expand-Archive ngrok.zip
     - name: Auth ngrok
